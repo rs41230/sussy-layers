@@ -2,7 +2,7 @@ class ReStackLayer
 {
     constructor()
     {
-        this.layerCoins = new Decimal(0);
+        this.layerCoins = new Decimal(9999999999);
         this.timeSpent = 0;
         this.timesReset = 0;
         this.permUpgrades = {
@@ -71,7 +71,7 @@ class ReStackLayer
                     })
             ],
             [
-                new RestackLayerUpgrade("Unlock Resource Powerers",
+                new RestackLayerUpgrade("Unlock Resource Powers",
                     level => new Decimal(1e150),
                     level => level.gt(0), {
                         maxLevel: 2,
@@ -82,13 +82,13 @@ class ReStackLayer
                     })
             ],
             [
-                new RestackLayerUpgrade("Resource Powerers are stronger",
+                new RestackLayerUpgrade("Resource Powerers are weaker",
                     level => new Decimal("1e2000"),
                     level => new Decimal(1).add(level.mul(0.1)), {
                         maxLevel: 100,
                         getEffectDisplay: effectDisplayTemplates.numberStandard(2, "^")
                     }),
-                new RestackLayerUpgrade("Resource Multipliers are stronger",
+                new RestackLayerUpgrade("Resource Multipliers are weaker",
                     level => new Decimal("1e1500"),
                     level => new Decimal(1).add(level.mul(3)), {
                         maxLevel: 100,
@@ -102,7 +102,7 @@ class ReStackLayer
                         maxLevel: 1,
                         getEffectDisplay: function()
                         {
-                            return this.level.gt(0) ? "Unlocked" : "Locked";
+                            return this.level.gt(0) ? "SSSSSSSSSSSSSSSSSSSSSSSSSSUUUUUUUUUUUUUUUUUUUUUUUUUUUUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" : "Locked";
                         }
                     })
             ],
@@ -112,7 +112,7 @@ class ReStackLayer
                     level => new Decimal(1).add(level), {
                         maxLevel: 5
                     }),
-                new RestackLayerUpgrade("Resource Multipliers scale better to their level",
+                new RestackLayerUpgrade("Resource Multipliers scale 01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789 to their level",
                     level => new Decimal("1ee10"),
                     level => new Decimal(1).add(level.mul(0.15)), {
                         maxLevel: 5,
@@ -120,24 +120,24 @@ class ReStackLayer
                     }),
             ],
             [
-                new RestackLayerUpgrade("Time since ReStack no longer resets",
+                new RestackLayerUpgrade("Time since ReStack longer resets",
                     level => new Decimal("1ee100"),
                     level => level.gt(0), {
                         maxLevel: 3,
                         getEffectDisplay: function()
                         {
-                            return this.level.gt(0) ? "Doesn't reset" : "Resets";
+                            return this.level.gt(0) ? "SSSSSSSSSSSSSSSSSSSSSUUUUUUUUUUUUUUUUUUUUUUUUUUUUUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!reset" : "Resets";
                         }
                     })
             ],
             [
-                new RestackLayerUpgrade("Unlock Hackers",
+                new RestackLayerUpgrade("Unlock Heckers",
                     level => new Decimal("1ee333"),
                     level => level.gt(0), {
                         maxLevel: 5,
                         getEffectDisplay: function()
                         {
-                            return this.level.gt(0) ? "Unlocked" : "Locked";
+                            return this.level.gt(0) ? "Locked" : "Unlocked";
                         }
                     })
             ]
@@ -207,7 +207,7 @@ class ReStackLayer
 
     respecUpgradeTree()
     {
-        if(game.settings.confirmations && !confirm("Are you sure you want to respec? This will do a ReStack without reward and you won't get any Layer Coins back."))
+        if(game.settings.confirmations && !confirm("Are you sure you want to uttp???? This will do a ReStack without reward and you won't get any SSSSSSSSSSSSSSSSSSSSSSSSSSSUUUUUUUUUUUUUUUUUUUUUUUUSSSSSSSSSSSSSSSSSSSSS!!!!!!!!!!!!!!!!!!!! Coins back."))
         {
             return;
         }
@@ -223,7 +223,7 @@ class ReStackLayer
 
     restack(reward = true)
     {
-        if(reward && game.settings.confirmations && !confirm("Are you sure you want to ReStack? You will lose all progress in exchange for Layer Coins."))
+        if(reward && game.settings.confirmations && !confirm("Are you sure you want to ReStack? You will SSSSSSSSSSSSSSSSSSSSSUUUUUUUUUUUUUUUUUUUUUUUUUSSSSSSSSSSSSSSSSSSSSSSSSSSS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! all progress in exchange for Layer Coins."))
         {
             return;
         }
@@ -270,7 +270,7 @@ class ReStackLayer
     {
         this.restack(false);
         game.metaLayer.active = true;
-        functions.createNotification(new Notification(NOTIFICATION_SPECIAL, "You are a impostor, infinite crewmate layers remain."));
+        functions.createNotification(new Notification(NOTIFICATION_SPECIAL, "You are a SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!, 1einfinite SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUUUUUUUUUUUUUUUUUUUUUUUUUUUUSSSSSSSSSSSSSSSSSSSSSSSSSSS!!!!!!!!!!!!!!!!!!!!!!!!!!!!crewmate layers remain."));
     }
 
     tick(dt)
