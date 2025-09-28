@@ -21,6 +21,7 @@ Vue.component("news-ticker", {
                 "FIRST FIRST WARNING TROLL!",
                 "XD u just got LD!!!!!!!!!!!!!!!!!!!!",
                 "YOU GOT RICKROOLED!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+                "<span class='flipped-v'>ඞ</span>"
             ],
             currentMessage: "FIRST FIRST WARNING TROLL!",
             messageIndex: -1
