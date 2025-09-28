@@ -53,15 +53,15 @@ class Challenge
         switch (this.rewardType)
         {
             case CHALLENGE_REWARD_POWERGENERATORS:
-                return "All Power Generators are x" + functions.formatNumber(this.applyReward(), 2, 2) + " stronger";
+                return "All Power Generators are x" + functions.formatNumber(this.applyReward(), 3, 3) + " stronger";
             case CHALLENGE_REWARD_GENMULTI:
-                return "All Generator Multiplicators per 10 Levels are +" + functions.formatNumber(this.applyReward(), 3, 3) + " better";
+                return "All Generator Multiplicators per 10 Levels are +" + functions.formatNumber(this.applyReward(), 4, 4) + " better";
             case CHALLENGE_REWARD_PRESTIGEREWARD:
-                return "Prestige Reward of Layer " + PrestigeLayer.getNameForLayer(this.cfg.layerid) + " is x" + functions.formatNumber(this.applyReward(), 2, 2) + " higher";
+                return "Prestige Reward of Layer " + PrestigeLayer.getNameForLayer(this.cfg.layerid) + " is x" + functions.formatNumber(this.applyReward(), 3, 3) + " higher";
             case CHALLENGE_REWARD_GENMULTI_ABS:
-                return "All Alpha Generators are x" + functions.formatNumber(this.applyReward(), 2, 2) + " stronger";
+                return "All Alpha Generators are x" + functions.formatNumber(this.applyReward(), 3, 3) + " stronger";
             default:
-                return "A Cake."
+                return "A SSSSSSSSSSSSSSSSSSSSSSSSUUUUUUUUUUUUUUUUUUUUUUUUUUUUUSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
         }
     }
 
